@@ -1,0 +1,1 @@
+<p>Contoh penerapan multipleview yang dipanggil dari suatu controller</p>
