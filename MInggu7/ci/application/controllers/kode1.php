@@ -20,6 +20,24 @@ class Kode extends CI_Controller {
               }
     } else {
       echo 'Input URI salah';
+      public function _remap($var){
+        if (isset($var)){
+            switch (strtolower($var)){
+                case 'phyton':
+                    $this->hello_python();
+                    break;
+                case 'cpp':
+                    $this->hello_cpp();
+                    break;
+                case 'java':
+                    $this->hello_java();
+                    break;
+                default:
+                $this->index();
+            }
+        }else{
+            $this->index();
+        }
     }
-  }
 }
+ 
